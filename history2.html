@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高爾夫噴灌簡史 | 滙凱實業 - Hony Kon</title>
+    <meta name="description" content="高爾夫球場噴灌系統發展史，從水力推動灑水車到電腦控制泵站系統的演進歷程。作者：Kent W. Kurtz博士與GCM成員。翻譯：滙凱實業有限公司。">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Side-by-side bilingual layout */
+        .bilingual-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .bilingual-row {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .bilingual-row > div {
+            flex: 1;
+            width: 50%;
+        }
+        
+        .english-column {
+            padding-right: 20px;
+            border-right: 1px solid #ddd;
+        }
+        
+        .chinese-column {
+            padding-left: 20px;
+        }
+        
+        .bilingual-container p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+            text-align: left;
+        }
+        
+        .bilingual-container h2 {
+            color: #333;
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #2e7d32;
+        }
+        
+        .bilingual-container h3 {
+            color: #2e7d32;
+            font-size: 1.3rem;
+            margin: 25px 0 10px;
+        }
+        
+        .bilingual-container blockquote {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-left: 3px solid #2e7d32;
+            font-style: italic;
+        }
+        
+        .bilingual-container blockquote footer {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #666;
+            font-style: normal;
+        }
+        
+        .author-header {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f9f9f9;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .author-header h1 {
+            color: #2e7d32;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .author-header .subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .author-header .author-info {
+            color: #333;
+            font-size: 0.95rem;
+        }
+        
+        .column-header {
+            font-weight: bold;
+            color: #2e7d32;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #2e7d32;
+        }
+        
+        .source-footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            background: #f5f5f5;
+            border-top: 1px solid #ddd;
+        }
+        
+        .source-footer a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+        
+        .source-footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .bilingual-row {
+                flex-direction: column;
+            }
+            
+            .bilingual-row > div {
+                width: 100%;
+            }
+            
+            .english-column {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                padding-right: 0;
+                padding-bottom: 20px;
+            }
+            
+            .chinese-column {
+                padding-left: 0;
+                padding-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-drops">
+            <div class="preloader-drop"></div>
+            <div class="preloader-drop"></div>
+            <div class="preloader-drop"></div>
+            <div class="preloader-drop"></div>
+            <div class="preloader-drop"></div>
+        </div>
+        <p>載入中...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">💧</span>
+                <span>滙凱實業</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li class="dropdown">
+                    <a href="products.html">產品介紹 ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#toro">TORO 系列</a></li>
+                        <li><a href="products.html#rainbird">Rain Bird 系列</a></li>
+                        <li><a href="products.html#hunter">Hunter 系列</a></li>
+                    </ul>
+                </li>
+                <li><a href="services.html">服務項目</a></li>
+                <li><a href="portfolio.html">實績案例</a></li>
+                <li><a href="history.html" class="active">噴灌簡史</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <button class="mobile-nav-close">✕</button>
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="products.html">產品介紹</a></li>
+            <li><a href="services.html">服務項目</a></li>
+            <li><a href="portfolio.html">實績案例</a></li>
+            <li><a href="history.html">噴灌簡史</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <div class="author-header">
+        <h1>高爾夫噴灌簡史</h1>
+        <p class="subtitle">The greening of the green</p>
+        <div class="author-info">
+            <p><strong>作者：Kent W. Kurtz博士與GCM成員</strong></p>
+            <p>Kent W. Kurtz, Ph.D., has been a professor of turfgrass science at California State Polytechnic University Pomona for more than 30 years.</p>
+            <p style="margin-top: 10px;"><strong>翻譯：滙凱實業有限公司</strong></p>
+        </div>
+    </div>
+
+    <!-- Bilingual Content -->
+    <div class="bilingual-container">
+        
+        <!-- Column Headers -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <div class="column-header">English Version</div>
+            </div>
+            <div class="chinese-column">
+                <div class="column-header">中文版本</div>
+            </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <p>Golf course irrigation has evolved from mule-drawn water wagons to computer-regulated pump stations.</p>
+                <p>Like other turfgrass innovations, irrigation emerged as an adjunct to the management of golf courses. In the 19th century, golf course in the United States used mule-drawn water wagons to irrigate fairways and, taking their cues from St. Andrews in Scotland, began to water putting greens as well. Toward the end of the century, Yankee ingenuity entered the scene, as innovative Americans began to develop machines to assist in the laborious task of irrigation.</p>
+                <p>E. Stebbins Manufacturing Co. in Springfield, Mass., developed the Twin Comet Lawn Sprinkler, and began selling it in 1897. one of the first gear-driven lawn sprinklers to be mass-produced in the United States, the Twin Comet consisted of three revolving arms and a hose nozzle. It stood 17 inches high, weighed 6 pounds and cost $5.</p>
+            </div>
+            <div class="chinese-column">
+                <p>高爾夫球場的噴灌系統已由水力推動灑水車發展至電腦控制的泵站系統。</p>
+                <p>隨著草皮的革新，噴灌漸成為高爾夫球場管理的重要部份，在19世紀時期，美國的高爾夫球場採用了蘇格蘭人聖‧安德森先生水力推動灑水車來灌溉高爾夫球場的球道及果嶺，效果十分的不錯。在接近19世紀未時，美國人發展出了一套精巧的機具系統來協助原本吃力的噴灌工作。</p>
+                <p>美國麻州的首府Springfield的一間製造廠E. Stebbins Manufacturing Co.,發展出了Twin Comet Lawn灑水器，並於1897年開始銷售；其中第一個草坪用齒輪帶動式的灑水頭開始在美國大量生產。Twin Comet的組成成份有3個旋轉臂桿及一個軟管噴嘴，總長共17"，6磅重，每件售價美金5元。</p>
+            </div>
+        </div>
+
+        <!-- Pioneers Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Pioneers of the early 1900s</h2>
+                <p>In 1894, Charles Skinner from troy, Ohio, obtained a patent for his above ground sprinkling system. The galvanized pipes were turned by hand and were suspended 6 feet above the area to be irrigated. Across the country in Pasadena, Calif., John Ross established the first company to manufacture lawn sprinklers in 1904. L.B. Harris patented one of the first gear-driven sprinkler heads, the Harris Precipitation, in 1910.</p>
+                <p>Another pioneer, W. Van Thompson, founded the Thompson Manufacturing Co. in Pasadena in 1907. by 1915, the Thompson revolving-arm roller sprinkler was being used on golf greens, and Los Angeles Country Club purchased one of the sprinklers in 1918. Los Angeles CC was also one of the first clubs to install pipe and quick-coupler valves around World War I. In 1936, Thompson started selling the Commander, an underground gear-driven, rotary sprinkler head, which remained in production until 1955. Thompson Manufacturing was eventually split in two, with Signature Controls buying the golf irrigation division in April 2000 and L.R. Nelson Corp. purchasing the hose-end sprinkler division later that year.</p>
+                <p>L.R. Nelson developed a turf sprinkler in 1906, and he is credited with developing one of the early large traveling sprinklers. He also worked with the B.F. Goodrich Co. to develop a 5-inch hose that could be dragged along to work with the sprinkler. The Nelson family sold L.R. Nelson Co. in 1972, and that company continues to operate as L.R. Nelson Corp. Today Nelson's grandson is president of the Nelson Irrigation Corp., which specializes in agricultural irrigation systems.</p>
+                <p>In 1912, another pioneer in irrigation, W.A. Buckner, obtained his first patent for a slow-rotation sprinkler. Shortly thereafter, Buckner's hoseless sprinkler irrigation system was installed at Pebble Beach Golf Course, Monterey, Calif., during the course's construction. During the next 30 years, Buckner also developed the quick-coupling valve, the sand resistant bearing and the cam-driven sprinkler head. The union of Buckner Turf Irrigation and Storm Irrigation (originally a brass foundry) resulted in today's Buckner by Storm.</p>
+                <p>In 1920, Brook Hollow Country Club in Dallas opened with a state-of-the-art irrigation system featuring steel pipes, a centralized motorized pumping station and hand-operated quick-coupler sprayers. The automatic-sequencing hydraulic controller was developed in 1922 by George Moody and first installed in 1924. The first commercial system was installed five years later for the city of Upland, Calif.</p>
+                <p>Pop-up sprinklers were another important advancement in irrigation technology. John Brooks designed a brass pop-up turf sprinkler in 1916. within 10 years, he had made automatic irrigation possible by combining an electric timer that activated a hydraulic controller with the sprinkler heads. Brooks granted a franchise to Frederick Reinecke, who established Brooks of California and later developed the Febco brand of valves and vacuum breakers for turf applications. Febco exists today as a brand of CMB Industries.</p>
+                <p>By the 1930s, brass pop-up sprinklers with fixed-spray heads were quite common. Brass was used because of its resistance to corrosion. In the Midwest, brothers Daniel and Bernard Wright of Chicago combined their business with the Mueller Brass Co. of Port Huron, Mich., to form Muellermist. The company offered a complete under-ground turf sprinkler irrigation system with a ball-drive pop-up head as early as 1932.</p>
+                <p>Some of the first golf courses to install irrigation systems in the United States were Long Island's National Golf Links of America in Southampton, N.Y., the Merion Golf Club in Ardmore, Pa., and Pinehurst (N.C.). when the game of golf spread west, golf course architects realized that building and maintaining golf courses were impossible without irrigation.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>19世紀初的先驅</h2>
+                <p>在1894年，Ohio州，Troy市的查爾斯‧史更那取得了地上噴灌系統的專利，利用一支鍍鋅鋼管用手轉動高於地面6尺的鋼管來噴灌。在1904年John Ross在美國加州巴莎廸那郡建立了他的第一間公司，生產草坪噴灑器，Mr. L.B. Harris也是製造灑水器的先驅之一，但他的風光時刻卻在1910年時驟然落下。</p>
+                <p>另一個先驅者，Mr. W. Van Thompson於1907年在美國加州巴莎廸那郡建立了Thompson製造廠，發展出可旋轉的噴灌器材並將之應用在高爾夫球場上。1918年洛磯山高爾夫俱樂部購買了此種噴灌器材，在第一次大戰期間，洛磯山高爾夫鄉村俱樂部也是安裝有齒輪帶動式噴頭及有快速給接閥的球場之一。1936年時，Mr. Thompson開始販售Commander(一個地下式的齒輪帶動旋轉式噴頭)，Thompson公司持續生產此產品至1955年，但公司最後還是一分為二，其中Signature控制器公司在2000年4月買下高爾夫噴灌部門，繼之次年被L.R. Nelson公司買下了軟管灌溉部門。</p>
+                <p>1906年L.R. Nelson公司發展出草皮灌溉系統而且他也在B.F. Goodrich公司發展出了5吋軟管，可以用拖拉方式來溉灌，但在1972年Nelson家族將L.R. Nelson公司賣出，之後L.R. Nelson公司仍持續營運，至今Nelson噴灌公司仍由Nelson的孫子繼續經營，並專研於農業溉灌系統上。</p>
+                <p>在1912年，另一個噴灌代表人物W.A.Buckner取得了他的第一個專利-低旋轉灑水器，在短時間之內，他的設計被Pebble Beach 高爾夫球場所採用，在接下來的30年裡，Buckner也發展出了快速給水閥及防砂軸承及凸輪轉動的灑水頭，Buckner的草皮灑水系統及Storm灑水系統合併而成現在的Storm公司。</p>
+                <p>在1920年，Dallas Brook Hollow鄉村俱樂部引進當時最先進最高級的噴灌系統，採用鋼管配管(如自來水系統)及中央系統泵站及手動操作連接快速給水灑水器，自動化連續液壓式控制器在1922年由George Moody所發展出來，並於1924年安裝完成，五年後，第一套商品化系統在美國加州Upland市按裝使用。</p>
+                <p>跳起式噴頭也是噴灌技術的另一項重大發展，在1916年John Brooks設計了一款黃銅製的跳起式噴頭，在之後的十年，他又發展出了將噴灌設備聯結電子時間控制器和自動程序的液壓控制器。Brook取得了Frederick Reinecke的財務支持，在加州建立了Brooks公司，後來發展成Febco牌閥門及破真空閥，今日Febco是CMBI工業公司的一廠商。</p>
+                <p>在1930年，黃銅製跳起式噴頭及固定噴頭在當時已是相當普遍了，黃銅之所以被使用乃因為它具有抗腐的作用，在美國中西部，Daniel及Bernard兄弟將他們在芝加哥的公司Port Huron興Mueller Brass合併，組成Mullermist公司，提供完整的地下化噴灌系統並採用擊球轉動跳起式噴頭。</p>
+                <p>在美國一些一流的高爾夫球場皆有安裝噴灌系統，如紐約的Long Island國際高爾夫球場，Merion高爾夫球俱樂部及Pinehurst球場，球場的設計師也領悟到要維持一個球場在良好的狀態下，沒有噴灌是不行的。</p>
+            </div>
+        </div>
+
+        <!-- Another View Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Another view of the early years</h2>
+                <p>Although the early part of the century produced advances in turf irrigation equipment, many golf curse were unable to take full advantage of the technology. Robert Williams, 1958 president of GCSAA, recalls golf course in 1920s and'30 that used hydrants installed in the rough along one side of the fairway. "It took two men most of the night to water all the greens and nine fairways." Says Williams. "Usually 50 100-foot hoses and 10 to 12 sprinklers had to be moved around the course by hand or by truck or tractor." Williams also remembers that it was difficult to find night watermen because they were required to work until 2 A.M. or later to ensure that the fairways were watered.</p>
+                <p>"It was a hard job. You didn't want high schoolers out on the course all night. It was tedious and scary work, with the occasional wild animal or vandal breaking the monotony," the 60-year GCSAA member says.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>近年來的溉況</h2>
+                <p>儘管近年來在草皮灌溉系統上已有進展，但許多的球場仍無法取得全部的優勢及技術，在1958年時GCSAA的董事長Robert Williams回想起從1920年到1930年間噴灌方式：沿著球道的長草區的一邊按裝的給水栓來灌水的方式，Williams說道："這麼就需要有二個人用整晚的時間去灌溉果嶺及9個球道了。"通常一條50呎~100呎的軟管有10~12個噴頭，必須靠人工、卡車或拖引機才能將軟管分散移動到需要的位置，而且要找一個夜間的噴灑人也很困難，因為他們必須工作到凌晨2點，或者更晚，直到他們確定每一個球道都已有灑到水。</p>
+                <p>一個GCSAA60歲的員工說，這真是一個困難的工作，你不會要一個高中生整晚在球場做這樣乏味且危險的工作，只有偶而野生動物的闖入改變了寧靜的氣氛。</p>
+            </div>
+        </div>
+
+        <!-- Rain Bird Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Rain Bird</h2>
+                <p>Although the great depression business throughout the country in the early 1930s, the irrigation industry continued to advance.</p>
+                <p>A citrus farmer, Orten Englehardt, and his neighbor, Clement Lafetra, launched the Rain Bird Co. in Glendora, Calif., during this period. Englehardt produced the prototype of a horizontal impact-drive sprinkler in 1932 and received the patent for his "spring-activated impact sprinkler" in 1934. the innovative design had fewer moving parts, and the sprinklers were more dependable and less expensive.</p>
+                <p>By 1935, Engliehardt wanted to return to farming, so Lafetra and his wife, Mary Elizabeth, assumed the manufacturing and sales rights to Englehardt's invention. The bird-like appearance of the sprinklers led the LaFetras to name their company Rain Bird after a Native American legend about a rain bird that ended a long period of drought.</p>
+                <p>Los Angeles CC purchased some early Rain Bird equipment to irrigate its golf course. Rain Bird's position in the industry had become established by the end of World War II. In 1990, Rain Bird's original impact sprinkler joined EliWhitney's cotton gin as a historic engineering landmark, the highest honor presented by the American Society of Agriculture Engineers.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>Rain Bird</h2>
+                <p>在1930年時，經濟仍然十分的蕭條，但噴灌技術仍持續的進步發展中。</p>
+                <p>一個種柑橘的農人，Orten Englehardt及他的鄰居Clement Lafetra在加州Glendora合開了Rain Bird公司，在這段期間，Englehardt在1932年設計了原型水平衝擊性噴頭，並於1934年取得了彈簧回轉力衝擊式噴頭的專利權，此項創新設計後來一直改進更新，讓噴頭更加穩定且價格愈來愈便宜。</p>
+                <p>1935年Engliehardt想要回歸田園生活，所以Lafetra 和他的妻子Mary Elizabeth就承接了他的工廠和他的發明；這個看似鳥兒的噴頭，領著Lafetra把公司取名為"Rain Bird"，而使"Rain Bird"在美國行銷無止。</p>
+                <p>Los Angeles高爾夫球場買了一些Rain Bird早期的設備來做球場噴灌，Rain Bird在工業上的地位也於第二次世界大戰未期建立了，在1990年Rain Bird的發明影響了噴灌系統加入Eliwhitney's棉花軋棉機，成為歷史性的工程地標，美國農業工程師協會也曾授予Rain Bird最高榮譽。</p>
+            </div>
+        </div>
+
+        <!-- Post-WWII Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Post-World War II</h2>
+                <p>After World War II, interest in outdoor recreation and golf accelerated. The turf grass irrigation industry expanded because grass playing surfaces needed water. Completely automatic irrigation systems were available after the war, but converting quick-coupler systems did not gain momentum until the 1960s and 1970s.</p>
+                <p>In the early 1950s, Brentwood Country Club in Los Angeles was one of the first golf courses to employ a fully automatic irrigation system. At a cost of $120,000, the golf course was ensured wall-to-wall coverage using Buckner sprinkler heads and valves and a Moody controller. During the post-war era, independent inventors and skilled craftsman continued to prosper in the irrigation business. The primary companies in the turf and golf course market were Febco, Buckner and Rain Bird.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>第二次世界大戰之後</h2>
+                <p>第二次世界大戰之後，戶外休閒活動及高爾夫球運動加速的發展，灌溉的技術也因為草皮的需要而發展起來，全自動的噴灌系統也在戰後才有，但當時並未結合快速給水系統，直到1960年及1970年才有所改變。</p>
+                <p>在1950年初，洛磯山的Brentwood鄉村俱樂部是當時第一個使用全自動噴灌系統的球場，其價值為USD120,000美金，球場內沒有一處沒有使用噴頭及Moody控制器；在大戰期間，專業的發明家及技工持續的努力於噴灌業，其中在當地主要的公司有Febco、 Buckner及 Rain Bird。</p>
+            </div>
+        </div>
+
+        <!-- Hunter Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Hunter</h2>
+                <p>In Riverside, Calif., L.J. Hunter founded the Hunter Engineering Co., making tubing for portable sprinklers. In 1952, Hunter's son, Edwin, founded Moist-O-Matic to build moisture sensors. Hunter pioneered the use of plastics and revolutionary new technologies in producing water-efficient golf sprinklers, valves and control systems. Within a short time, Edwin developed a smaller-diameter sprinkler head to compete with the standard impact-type head that had the greatest share of the market. His invention was a gear-driven, slow-rotating, plastic pop-up head, which was very reliable and applied water evenly.</p>
+                <p>A prolific inventor, who ultimately held more than 60 irrigation patents, Edwin Hunter also developed the valve-in-head sprinkler and multistation hydraulic controller. In 1962, Hunter sold his business to the Toro Co. but stayed with the company as director of design and development for its new irrigation division. Hunter left Toro in the late 1970s and in 1981 formed a new company, Hunter Industries, which produced plastic gear-driven sprinkler heads.</p>
+                <p>The Hunter Golf division of Hunter Industries now produces irrigation equipment for golf courses, including rotors, valves, weather sensors and central/satellite control systems. In 1998 Hunter Golf acquired the Legacy Golf division of Buckner Irrigation.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>Hunter</h2>
+                <p>Mr. Hunter在美國加州河邊市建立了Hunter公司，生產相關管類及輕便的噴灌材料，在1952年，Mr. Hunter的兒子Mr. Edwin發展出了Moist-O-Matic水份感應器，Hunter領先採用塑膠原料應用於球場噴頭上及閥門控制系統上，在很短的時間內Mr. Edwin發展出了一種直徑較小的噴頭，一種以齒輪傳動、低轉速、塑膠的跳起式噴頭，相當的耐用且實用，在市場上有較大的占有率。</p>
+                <p>Mr. Edwin Hunter是一個多才多藝的發明家，他擁有60多種以上的噴灌器材的專利權，同時發展Valve-In-head帶電磁閥的噴水頭及多站式的水壓控制器，在1962年Mr. Hunter把他的公司賣給TORO公司，同時，留在公司做新的噴灌產品的研發設計總監。1970年Mr. Hunter 離開TORO公司，1981年設立新公司-Hunter工業公司，生產工程塑膠齒輪帶動的噴頭。</p>
+                <p>Hunter工業公司Hunter高爾夫部門，現在製造噴灌器材提供給高爾夫球場包含轉子、閥門、氣象感應器及中央衛星控制器系統。1998年Hunter高爾夫部門又取得了Bucker噴灌的Legacy高爾夫控制系統。</p>
+            </div>
+        </div>
+
+        <!-- Toro Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>The Toro Co.</h2>
+                <p>Although The Toro Co. had been involved in golf course irrigation since the 1925 introduction of the Toro Sea Serpent fairway sprinkler, it did not become one of the leaders in the irrigation market until it purchased Moist-O-Matic from Edwin Hunter in 1962. Since then, Toro has been manufacturing and marketing large-radius, gear-driven, valve-in-head and pop-up sprinklers.</p>
+                <p>In 1996 Toro acquired James Hardie Irrigation Group, which it established as the Irritrol brand. Within the past decade, Toro has introduced a fully computerized irrigation system for turfgrass on golf courses and athletic fields. Toro remains the only manufacturer of turf maintenance equipment with an irrigation division.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>The Toro Co.</h2>
+                <p>雖然TORO在1925年時推出了Sea-Serpent海蛇球道噴頭的噴灌系統並用於高爾夫球場，但TORO當時並沒有成為噴灌的領導者之一，直到TORO在1962年買下Edwin Hunter公司的Moist-O-Matic並開始生產並行銷大直徑齒輪轉動，帶電磁閥的跳起式噴頭。</p>
+                <p>在1996年TORO併購了James Hardie噴灌公司，在過去十年，TORO引進全自動電腦化的噴灌系統並應用於球場及學校方面，TORO目前仍是唯一生產草坪維護設備及噴灌系統的專業公司。</p>
+            </div>
+        </div>
+
+        <!-- Mid-century Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>Mid-century and beyond</h2>
+                <p>Since the 1950s, the irrigation industry has grown primarily as a result of the introduction of the electrically activated valve, which allowed turf managers to irrigate efficiently for specific time periods without having to depend on an irrigation crew. The development of the transistor in the 1960s eliminated the use of tubes in radio-controlled units and resulted in more flexibility in controllers. The advent of the central computer controller in the 1970s further simplified the task of irrigation. Today wireless technology allows superintendents to operate sprinklers from their desks or in the field by remote control.</p>
+                <p>Today, sophisticated computerized water-management systems are found on many golf courses. These systems may be combined with weather stations, which allow superintendents to coordinate irrigation with the evapo-transpiration of the site. The efficiencies gained from technology allow superintendents to conserve water and reduce the cost of maintaining the golf course. Advances in the use of effluent, gray and saline water for golf course irrigation continue to be explored and developed as ecologically sound methods of irrigating golf course.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>中世紀之後 (1950年之後)</h2>
+                <p>自從1950年代之後，電動控制閥門的推出使噴灌工業得到了快速的成長，草坪管理經理可以在特定的時間(晚間)灑水，而不必依靠一群灌水人員；1960年電晶體的發明取代真空管，使得控制器更具控制時間的彈性。1970年中央電腦控制器更簡化了噴灌工作，今日，無線通訊科技技術使場務總監可從電腦桌上或球道現場來遙控噴水頭(如使用手機來控制噴水頭一樣)。</p>
+                <p>今日，精密的電腦化噴灌管理系統使用在許多的高爾夫球場上，這些系統也俱備了氣象站，可讓場務總監依水份蒸發量調節噴灑量，效率高的技術使得總監可以保留水源以減少球場的維持成本；以更先進的方式來使用河流水，灰水(中水)、塩水在高爾夫球場噴灌上，繼續被發現及發展，做為高爾夫球場的噴灌用水，更符合生態環境方面的要求，採用生物過濾系統 (Bia-Filter System)來淨化水源。</p>
+            </div>
+        </div>
+
+        <!-- Irrigation Association Section -->
+        <div class="bilingual-row">
+            <div class="english-column">
+                <h2>The irrigation association</h2>
+                <p>In 1949, the Association of Sprinkler Irrigation Equipment Manufacturers was organized as a result of efforts by farmers to obtain more aluminum for agricultural irrigation. The group changed its name to the Irrigation Association in 1978. Although the association's past is rooted in agriculture, today 65 percent of its members are involved in turf, landscape and golf.</p>
+                <p>Tom Kimmel, executive director of the association, says the organization has a four-pronged agenda; legislation, education, certification and communication. The professionals of the irrigation association promote efficient irrigation and conservation and seek to improve the quality and quantity of water. The irrigation Association works closely with GCSAA in the area of education, and many of the association's 26 programs address irrigation topics of interest to superintendents.</p>
+            </div>
+            <div class="chinese-column">
+                <h2>噴灌協會</h2>
+                <p>在1949年，噴灌協會 (Association of sprinkler Irrigation Equipment Manufacturers)努力發展出許多鋁製的農藝噴灌系統，協會在1978年改名為Irrigation Association，雖然這個協會在過去大多致力於農業上，但今日已有65%會員參與草坪景觀及高爾夫球場的噴灌。</p>
+                <p>Tom Kimmel協會的執行主管，組織有4種議程：法規、教育、認證及溝通，專業的噴灌協會推展有效率的噴灌系統並且加以保護管理、尋找增進水的品質及數量，噴灌協會與GCSAA一齊努力在各地區做教育訓練，將26個主題的噴灌知識教予有興趣的管理者。</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Source Footer -->
+    <div class="source-footer">
+        <p><strong>原文出處：</strong></p>
+        <p><a href="http://www2.gcsaa.org/gcm/2001/sept01/09greening.html" target="_blank">http://www2.gcsaa.org/gcm/2001/sept01/09greening.html</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>滙凱實業有限公司</h4>
+                    <p>HONY KON INTERNATIONAL CO., LTD.</p>
+                    <p>自1987年專注於景觀噴灌系統，為您打造綠色生活環境。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速連結</h4>
+                    <p><a href="about.html">關於我們</a></p>
+                    <p><a href="products.html">產品介紹</a></p>
+                    <p><a href="services.html">服務項目</a></p>
+                    <p><a href="portfolio.html">實績案例</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>聯絡資訊</h4>
+                    <p>📍 台北市忠孝東路4段162號4樓409室</p>
+                    <p>📞 +886-2-2776-0766</p>
+                    <p>📠 +886-2-2741-5731</p>
+                    <p>📧 sales.honykon@msa.hinet.net</p>
+                    <p>💬 Line: honykon</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 滙凱實業有限公司 Hony Kon. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">↑</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
