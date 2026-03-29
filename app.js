@@ -227,26 +227,44 @@ const Animations = {
  */
 const Accordion = {
     init() {
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        
-        accordionItems.forEach(item => {
+        // 1. Handle Main Accordions
+        const mainItems = document.querySelectorAll('.accordion-item');
+        mainItems.forEach(item => {
             const header = item.querySelector('.accordion-header');
             if (header) {
-                header.addEventListener('click', () => this.toggle(item));
+                header.addEventListener('click', (e) => {
+                    // Prevent click from bubbling if needed, 
+                    // though not strictly necessary for the top level
+                    this.toggle(item, '.accordion-item');
+                });
+            }
+        });
+
+        // 2. Handle Sub-Accordions (Nested)
+        const subItems = document.querySelectorAll('.sub-accordion-item');
+        subItems.forEach(subItem => {
+            const subHeader = subItem.querySelector('.sub-accordion-header');
+            if (subHeader) {
+                subHeader.addEventListener('click', (e) => {
+                    // Stop the click from triggering the parent accordion's toggle
+                    e.stopPropagation(); 
+                    this.toggle(subItem, '.sub-accordion-item');
+                });
             }
         });
     },
-    
-    toggle(item) {
+
+    toggle(item, selector) {
         const isActive = item.classList.contains('active');
-        
-        // Close all other items
-        document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
+
+        // Close only siblings within the same level/parent
+        const parentContainer = item.parentElement;
+        parentContainer.querySelectorAll(`${selector}.active`).forEach(activeItem => {
             if (activeItem !== item) {
                 activeItem.classList.remove('active');
             }
         });
-        
+
         // Toggle current item
         item.classList.toggle('active', !isActive);
     }

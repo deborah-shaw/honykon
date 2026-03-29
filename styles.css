@@ -572,12 +572,90 @@ section {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 1000px;
+    max-height: 2000px;
 }
 
 .accordion-body {
     padding: 20px 25px;
     color: var(--text-light);
+}
+
+/* Sub-Accordion */
+.sub-accordion-item {
+    border-top: 1px solid #eee;
+}
+
+.sub-accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    transition: var(--transition);
+}
+
+.sub-accordion-header .sub-accordion-text {
+    flex: 1;
+}
+
+.sub-accordion-header:hover {
+    background: #f1f1f1;
+}
+
+.sub-accordion-header .icon {
+    transition: var(--transition);
+}
+
+.sub-accordion-item.active .icon {
+    transform: rotate(180deg);
+}
+
+.sub-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.sub-accordion-item.active .sub-accordion-content {
+    max-height: 2000px;
+    padding: 10px 20px;
+}
+
+/* Container for the 10 images */
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.gallery-item {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.gallery-item span {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-top: 8px;
 }
 
 /* Timeline */
