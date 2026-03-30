@@ -86,13 +86,15 @@ const Navigation = {
 
     // --- NEW METHOD FOR TORO TOGGLE ---
     initMobileToroToggle() {
-        const toroToggle = document.querySelector('.mobile-toro-toggle div');
+        // Target the specific arrow icon instead of the whole row
+        const arrowToggle = document.querySelector('.arrow-icon-toggle');
         const toroSubItems = document.querySelector('.toro-sub-items');
-        const arrow = document.querySelector('.arrow-icon');
 
-        if (toroToggle && toroSubItems) {
-            toroToggle.addEventListener('click', (e) => {
-                e.stopPropagation(); 
+        if (arrowToggle && toroSubItems) {
+            arrowToggle.addEventListener('click', (e) => {
+                // Prevent the click from affecting parent links
+                e.preventDefault();
+                e.stopPropagation();
                 
                 const isHidden = toroSubItems.style.display === 'none' || toroSubItems.style.display === '';
                 
@@ -100,13 +102,8 @@ const Navigation = {
                 toroSubItems.style.display = isHidden ? 'block' : 'none';
                 
                 // Rotate the arrow icon
-                if (arrow) {
-                    if (isHidden) {
-                        arrow.style.transform = 'rotate(180deg)';
-                    } else {
-                        arrow.style.transform = 'rotate(0deg)';
-                    }
-                }
+                arrowToggle.style.transform = isHidden ? 'rotate(180deg)' : 'rotate(0deg)';
+                arrowToggle.style.transition = 'transform 0.3s ease';
             });
         }
     },
