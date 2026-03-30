@@ -53,6 +53,7 @@ const Navigation = {
         this.bindEvents();
         this.setActiveLink();
         this.initDropdownHover();
+        this.initMobileToroToggle(); // <--- Initialize the new toggle here
     },
     
     bindEvents() {
@@ -81,6 +82,33 @@ const Navigation = {
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') this.closeMobileMenu();
         });
+    },
+
+    // --- NEW METHOD FOR TORO TOGGLE ---
+    initMobileToroToggle() {
+        const toroToggle = document.querySelector('.mobile-toro-toggle div');
+        const toroSubItems = document.querySelector('.toro-sub-items');
+        const arrow = document.querySelector('.arrow-icon');
+
+        if (toroToggle && toroSubItems) {
+            toroToggle.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                
+                const isHidden = toroSubItems.style.display === 'none' || toroSubItems.style.display === '';
+                
+                // Toggle visibility
+                toroSubItems.style.display = isHidden ? 'block' : 'none';
+                
+                // Rotate the arrow icon
+                if (arrow) {
+                    if (isHidden) {
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        }
     },
     
     handleScroll() {

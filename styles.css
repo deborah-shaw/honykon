@@ -1344,3 +1344,15 @@ section {
     border-left: 2px solid var(--primary, #2e7d32);
     margin-left: 5px;
 }
+
+/* Style for the Toro sub-items */
+.toro-sub-items li a {
+    font-size: 0.9rem !important;
+    padding: 8px 0 !important;
+    color: #555 !important;
+}
+
+/* Rotation animation for the arrow */
+.arrow-icon.open {
+    transform: rotate(180deg);
+}
