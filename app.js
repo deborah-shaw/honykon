@@ -73,6 +73,15 @@ const Navigation = {
             this.mobileOverlay.addEventListener('click', () => this.closeMobileMenu());
         }
         
+        // We target all links inside the mobile navigation
+        const allMobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        allMobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // We use the existing closeMobileMenu function you already defined
+                this.closeMobileMenu();
+            });
+        });
+
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', (e) => this.handleSmoothScroll(e));
@@ -107,7 +116,7 @@ const Navigation = {
             });
         }
     },
-    
+
     handleScroll() {
         if (!this.navbar) return;
         
