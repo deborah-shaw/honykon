@@ -1326,3 +1326,21 @@ section {
         gap: 30px;
     }
 }
+
+/* Mobile Navigation Sub-menu styling */
+.mobile-sub-menu {
+    background: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+.mobile-sub-menu li a {
+    color: #444 !important;
+    font-size: 0.95rem !important;
+    padding: 8px 0 !important;
+}
+
+/* Vertical line to visually group the sub-items */
+.mobile-sub-menu ul {
+    border-left: 2px solid var(--primary, #2e7d32);
+    margin-left: 5px;
+}
