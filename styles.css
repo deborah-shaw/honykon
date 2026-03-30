@@ -19,6 +19,16 @@
     box-sizing: border-box;
 }
 
+html {
+    /* 1. Smoothly slide to the section instead of a jarring jump */
+    scroll-behavior: smooth; 
+    
+    /* 2. Create an 80px "safety zone" at the top so the fixed 
+          navbar doesn't cover your titles. 
+          (Since your navbar is 70px, 80px gives a 10px cushion) */
+    scroll-padding-top: 80px; 
+}
+
 body {
     font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
     line-height: 1.6;
