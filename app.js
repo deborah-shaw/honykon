@@ -808,4 +808,8 @@ style.textContent = `
         }
     }
 `;
+
+// Clear the form
+window.onpageshow = () => document.querySelector('form')?.reset();
+
 document.head.appendChild(style);
