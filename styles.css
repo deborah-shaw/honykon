@@ -190,6 +190,62 @@ body {
     background: var(--bg-light);
 }
 
+/* Ensure the parent is the reference point for the sub-menu */
+.sub-dropdown {
+    position: relative;
+}
+
+/* Sub-menu styling */
+.sub-menu {
+    position: absolute;
+    left: 100%;       /* Positions it to the right of the TORO link */
+    top: -10px;       /* Aligns it slightly better with the top of the link */
+    background: white;
+    min-width: 220px;
+    box-shadow: var(--shadow-hover);
+    border-radius: 8px;
+    padding: 10px 0;
+    list-style: none;
+    
+    /* Animation: Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px); 
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+/* Trigger the sub-menu when hovering over the parent LI */
+.sub-dropdown:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* Styling for sub-menu links */
+.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.sub-menu li a:hover {
+    background: var(--bg-light);
+    color: var(--primary);
+}
+
+/* Optional: Mobile styling - prevent the menu from flying off-screen */
+@media (max-width: 768px) {
+    .sub-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding-left: 20px; /* Indent sub-items on mobile */
+        background: #f9f9f9;
+    }
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -1062,8 +1118,8 @@ section {
 /* Image Placeholder with Animation */
 .image-placeholder {
     background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-    border-radius: 15px;
-    min-height: 300px;
+    border-radius: 40px;
+    min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1215,5 +1271,58 @@ section {
     
     section {
         padding: 30px 20px;
+    }
+}
+
+/* Container for the 4 images */
+.leed-full-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 Grid */
+    gap: 40px; /* Generous spacing for large images */
+    margin: 40px 0;
+}
+
+/* Individual Card Styling */
+.leed-card {
+    background: #fff;
+    border-radius: 4px; /* Sharper corners for a professional 'document' look */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.leed-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+}
+
+/* Force Letter Size Aspect Ratio (1:1.414) */
+.leed-card img {
+    width: 100%;
+    aspect-ratio: 8.5 / 11; /* Letter size ratio */
+    object-fit: cover;
+    display: block;
+    cursor: zoom-in; /* Hint for your Lightbox */
+}
+
+.leed-info {
+    padding: 20px;
+    text-align: center;
+    background: #fcfcfc;
+    border-top: 1px solid #eee;
+}
+
+.leed-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #2e7d32; /* Match your green theme */
+}
+
+/* Mobile: Stack them 1-by-1 */
+@media (max-width: 768px) {
+    .leed-full-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
